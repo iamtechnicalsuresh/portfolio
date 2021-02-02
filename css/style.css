@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Carter One', cursive;
+    overflow-x: hidden;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo img{
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: 4rem;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 5rem;
+    transition: visibility 0.2s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.nav-links li {
+    margin-right: 2rem;
+    
+}
+
+.nav-links li :hover {
+    border-bottom: solid 0.2rem white;
+    color: white;
+}
+
+.nav-links li a{
+    font-size: 1rem;
+    color: rgb(214, 214, 214);
+}
+
+.navToggle {
+    display: none;
+    position: absolute;
+    color: white;
+    right: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+} */
+
+/* Home Section Start */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.home-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home-content-left h2{
+    font-size: 1.5rem;
+    align-items: flex-start;
+    color: white;
+    
+    
+}
+
+.social-icons .fab {
+    font-size: 2rem;
+    margin: 0 0.5rem
+}
+
+.social-icons .fab:hover {
+    color: blue;
+}
+
+.home-content-left h1{
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+       
+}
+
+.home-content-left h2 span {
+    font-size: 2rem;
+    color: Green;
+}
+
+.home-content-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.portfolio-img {
+    width: 60%;
+    border-radius: 50%;
+    border: solid 0.1rem white;
+}
+
+.about-btn {
+    margin: 2rem;
+    padding: 0.8rem 1.8rem;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    border: white 0.1rem solid;
+
+}
+
+.about-btn:hover {
+    background-color: grey;
+    color: black;
+}
+
+/* Home Section End */
+
+/* Services Section */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.services-container h1 {
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+.hr-line {
+    width: 80%;
+}
+
+.card-container {
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    align-items: center;
+}
+
+
+.card {
+    width: 15rem;
+    height: 20rem;
+    background-color: grey;
+    border-radius: 1rem;
+    margin: 1rem;
+    /* padding: 1rem; */
+    box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+}
+
+.card:hover {
+    border: lightseagreen 0.2rem solid;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-info {
+    margin: 0.5rem;
+}
+
+/* Services Section End */
+
+/* About Section Start */
+
+.about-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.about-container h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.about-me {
+    background-color: grey;
+    width: 70%;
+    min-height: 17.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+    
+}
+
+.about-me:hover {
+    border: lightseagreen 0.2rem solid;
+}
+
+.about-me img {
+    width: 25.3%;
+    border-radius: 1rem;
+}
+
+.about-me div{
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.about-cardbox {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    max-width: 12rem;
+    min-height: 14rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+}
+
+.about-card:hover {
+    border: lightseagreen 0.2rem solid;
+}
+
+.about-card i {
+    font-size: 3rem;
+}
+
+/* Contact Us Form */
+.contact-container {
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.form-control {
+    min-width: 40vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0.2rem; */
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.form label {
+    font-size: 1rem;
+}
+
+.form input {
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.form textarea {
+    border-radius: 1rem;
+}
+
+.btn {
+    width: 100%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+
+footer {
+    min-height: 8rem;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer p {
+    margin: 1rem;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    animation: createBox 1s infinite;
+    background-color: brown;
+}
+
+.back-to-top a .far {
+    font-size: 2rem;
+    color: black;
+}
+
+
+@media (max-width: 680px) {
+    .navToggle {
+        display: block;
+        
+        
+        
+    }
+
+    .nav-links {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: grey;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        top: 0;
+        right: -2rem;
+        visibility: hidden;
+        transition: visibility 0.2s;
+
+    }
+
+    .home-container .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+
+    }
+
+    .home-content-right {
+        justify-content: center;
+    }
+
+    .portfolio-img {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+
+
+    .about-me {
+        background-color: grey;
+        width: 70%;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .about-me div{
+        margin: 0.5rem;
+        /* padding: 1rem; */
+        line-height: 1.5rem;
+    }
+
+    .about-cardbox {
+        
+        justify-content: center;
+    }
+    
+
+}
+
+
+.nav-link-show {
+    visibility: visible;
+    /* transition:  0.2s linear; */
+
+}
+
+
+@keyframes createBox{
+    from{
+        height:1.8rem;
+        width: 1.8rem;
+
+    }
+    to{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+@keyframes fontbulger {
+    0% {
+      font-size: 10px;
+    }
+    30% {
+      font-size: 15px;
+    }
+    100% {
+      font-size: 12px;
+    }
+  }

@@ -15,6 +15,7 @@
     --primary-font: 'Carter One', cursive;
     --color-white: white;
     --heading-font-size: 2rem;
+    --color-black: black;
 }
 
 body {
@@ -42,9 +43,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: var(--color-black);
     height: 5rem;
-    transition: visibility 0.2s;
+    
 }
 
 .fixed-nav {
@@ -52,6 +53,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    /* height: 100%; */
     
 }
 
@@ -67,11 +69,12 @@ a {
 .nav-links li {
     margin-right: 2rem;
     
+    
 }
 
 .nav-links li :hover {
     border-bottom: solid 0.2rem white;
-    color: white;
+    
 }
 
 .nav-links li a{
@@ -83,9 +86,11 @@ a {
     display: none;
     position: absolute;
     color: var(--color-white);
+    top: 2rem;
     right: 2rem;
     font-size: 1rem;
     cursor: pointer;
+    animation: bounce 2s infinite;
 }
 
 
@@ -98,7 +103,7 @@ a {
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .home-content {
@@ -182,6 +187,7 @@ a {
     font-size: 0.8rem;
     border-radius: 0.2rem;
     border: white 0.1rem solid;
+    transition: background-color 0.5s ease-in;
 
 }
 
@@ -200,7 +206,7 @@ a {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .services-container h1 {
@@ -231,10 +237,13 @@ a {
     margin: 1rem;
     /* padding: 1rem; */
     box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+    transition: all 0.1s linear;
 }
 
 .card:hover {
-    border: lightseagreen 0.2rem solid;
+    /* border: lightseagreen 0.2rem solid; */
+    width: 16.5rem;
+    height: 21.5rem;
 }
 
 .card-img {
@@ -246,6 +255,10 @@ a {
     margin: 0.5rem;
 }
 
+.card-info h1{
+    font-size: 1.5rem;    
+}
+
 /* Services Section End */
 
 /* About Section Start */
@@ -253,7 +266,7 @@ a {
 .about-container {
     min-width: 100vw;
     min-height: 100vh;
-    background-color: black;
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -275,11 +288,14 @@ a {
     align-items: center;
     padding: 0.5rem;
     box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+    transition: all 0.2s linear;
     
 }
 
 .about-me:hover {
     border: lightseagreen 0.2rem solid;
+    width: 72%;
+    min-height: 19%;
 }
 
 .about-me img {
@@ -312,10 +328,13 @@ a {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 6px 12px 0 rgba(250, 250, 250, 0.2), 0 10px 30px 0 rgba(252, 246, 246, 0.19);
+    transition: all 0.2s ease-in;
 }
 
 .about-card:hover {
     border: lightseagreen 0.2rem solid;
+    max-width: 13rem;
+    min-height: 15rem;
 }
 
 .about-card i {
@@ -355,6 +374,7 @@ a {
 
 .form label {
     font-size: 1rem;
+    /* color: var(--color-black); */
 }
 
 .form input {
@@ -441,9 +461,6 @@ footer p {
 @media (max-width: 680px) {
     .navToggle {
         display: block;
-        
-        
-        
     }
 
     .nav-links {
@@ -455,14 +472,18 @@ footer p {
         align-items: center;
         background-color: grey;
         width: 80%;
-        height: 100%;
+        height: 100vh;
         padding: 2rem;
         top: 0;
         right: -2rem;
-        visibility: hidden;
-        transition: visibility 0.2s;
+        transform: translateY(100%);
+        transition: transform 0.5s linear;
+        z-index: 0;
 
     }
+
+    
+    
 
     .home-container .home-content {
         display: flex;
@@ -515,8 +536,8 @@ footer p {
 
 
 .nav-link-show {
-    visibility: visible;
-    /* transition:  0.2s linear; */
+    transform: translateY(0);
+    
 
 }
 

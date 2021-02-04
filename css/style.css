@@ -93,6 +93,13 @@ a {
     animation: bounce 2s infinite;
 }
 
+.navToggle .fas {
+    transition: transform 0.5s ease-in;
+}
+
+.navToggle .fas:hover {
+    transform: rotate(180deg);
+}
 
 /* Home Section Start */
 

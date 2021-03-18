@@ -57,5 +57,5 @@ const backToTop = ()=> {
 const loader = document.querySelector(".loading-div");
 
 const preLoader = () => {
-  loader.style.display = "none";
+    setTimeout(() => loader.style.display = "none", 3000)
 };

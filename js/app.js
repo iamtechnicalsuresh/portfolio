@@ -52,3 +52,10 @@ const backToTop = ()=> {
         backToTopBtn.classList.remove("back-to-top-show")
     }
 }
+
+
+const loader = document.querySelector(".loading-div");
+
+const preLoader = () => {
+  loader.style.display = "none";
+};
